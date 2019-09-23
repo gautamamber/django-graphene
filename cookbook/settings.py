@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ingredients'
+    'ingredients',
+    'graphene_django'
 ]
 
 MIDDLEWARE = [
@@ -51,6 +52,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'cookbook.urls'
+
+GRAPHENE = {
+    'SCHEMA': 'cookbook.schema.schema'
+}
+
 
 TEMPLATES = [
     {
